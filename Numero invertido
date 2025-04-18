@@ -1,0 +1,17 @@
+// Online C compiler to run C program online
+// programa Invertido
+#include <stdio.h>
+
+int main() {
+  int n, resto, invertido = 0;
+  printf("ingrese un numero ");
+  scanf("%d", &n);
+  while(n !=0){
+      resto=n%10;
+      n=n/10;
+      invertido=invertido*10+resto;
+      }
+      printf("El numeor invertido es ");
+      printf("%d \n", invertido);
+return 0;
+}
